@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serenity Memory Center | Senior Day Program in Ridgefield, CT</title>
+<meta name="description" content="Serenity Memory Center is a nonprofit senior day program in Ridgefield, Connecticut for adults with early to middle stage memory loss. A place of connection, purpose, joy.">
+<link rel="icon" href="mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "Serenity Memory Center",
+  "description": "Nonprofit senior day program for adults with memory loss. A place of connection, purpose, joy.",
+  "url": "https://serenitymemory.org",
+  "address": {"@type": "PostalAddress","streetAddress": "6 Ivy Hill Rd","addressLocality": "Ridgefield","addressRegion": "CT","postalCode": "06877","addressCountry": "US"}
+}
+</script>
+<style>
+  :root{
+    --navy:#0A3A9A;
+    --navy-dark:#082C74;
+    --teal:#3A8FA3;
+    --purple:#6A3894;
+    --orange:#F57C0A;
+    --cream:#F8F5EE;
+    --white:#FFFFFF;
+    --rule:#D9D2C3;
+    --ink:#2A2F3D;
+    --muted:#4E5466;
+    --photo:#E4DED2;
+    --serif:"Libre Baskerville", Georgia, serif;
+    --sans:"Source Sans 3", "Segoe UI", Arial, sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.85}
+  img{display:block;max-width:100%}
+  a{color:var(--navy)}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;color:var(--navy);line-height:1.25;margin:0 0 .6em}
+  h1{font-size:clamp(2rem,4vw,2.75rem)}
+  h2{font-size:clamp(1.6rem,3vw,2.1rem)}
+  h3{font-size:1.4rem}
+  p{margin:0 0 1.1em}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 32px}
+  .narrow{max-width:780px;margin:0 auto;padding:0 32px}
+  .center{text-align:center}
+  .lbl{display:block;font:600 13px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:12px}
+  .tag{font-style:italic;color:var(--purple);font-size:1.2rem;margin:0}
+  .muted{color:var(--muted)}
+
+  /* Placeholder marker — search the code for class="ph" to find every spot that still needs real info */
+  .ph{background:#FBF0C9;border-bottom:1.5px dashed #C99A00;padding:0 .25em;color:#6B4E00;font-style:normal}
+
+  /* Ornament rule (echoes the line + dot in the logo) */
+  .orn{display:flex;align-items:center;justify-content:center;gap:12px;margin:24px auto 30px}
+  .orn::before,.orn::after{content:"";width:90px;height:1px;background:var(--orange)}
+  .orn b{width:9px;height:9px;border-radius:50%;background:var(--orange)}
+  .orn.left{justify-content:flex-start;margin-left:0}
+  .orn.left::before{display:none}
+
+  /* Header */
+  header{text-align:center;padding-top:30px;background:var(--cream)}
+  .logo img{height:110px;width:auto;margin:0 auto 20px}
+  nav{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);background:var(--cream);position:sticky;top:0;z-index:40}
+  .menu{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 32px;list-style:none;margin:0 auto;padding:14px 24px;max-width:1140px}
+  .menu a{font:600 14px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:#3B4256;text-decoration:none;padding-bottom:3px;border-bottom:1px solid transparent}
+  .menu a:hover{color:var(--navy)}
+  .menu a.active{color:var(--navy);border-bottom-color:var(--navy)}
+  .menu a.donate{color:#C9660A}
+  .menu a.donate.active{border-bottom-color:#C9660A}
+  .menu-btn{display:none;width:100%;background:none;border:none;padding:14px;font:600 14px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--navy);cursor:pointer}
+  @media (max-width:900px){
+    .logo img{height:84px}
+    .menu-btn{display:block}
+    .menu{display:none;flex-direction:column;gap:0;padding:0 24px 12px}
+    .menu.open{display:flex}
+    .menu a{display:block;padding:12px 0;border-bottom:1px solid var(--rule)}
+    .menu li:last-child a{border-bottom:none}
+  }
+
+  /* Buttons */
+  .btn{display:inline-block;border:1px solid var(--navy);color:var(--navy);background:transparent;padding:13px 30px;font:600 14px var(--sans);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;cursor:pointer;margin:6px 4px 0}
+  .btn:hover{background:var(--navy);color:#fff}
+  .btn.fill{background:var(--navy);color:#fff}
+  .btn.fill:hover{background:var(--navy-dark)}
+  .btn.warm{border-color:#C9660A;background:#C9660A;color:#fff}
+  .btn.warm:hover{background:#A9550A}
+
+  /* Pages */
+  .page{display:none}
+  .page.active{display:block}
+  section{padding:90px 0}
+  .white{background:var(--white)}
+  .cream{background:var(--cream)}
+  .ruled{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .page-head{text-align:center;padding:80px 32px 70px}
+  .page-head .tag{max-width:640px;margin:0 auto}
+
+  /* Photos (placeholders) */
+  .photo{background:var(--photo);color:#8A857C;display:flex;align-items:center;justify-content:center;text-align:center;font:600 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;padding:24px;min-height:300px}
+  .hero .photo{min-height:520px}
+  .hero-img{width:100%;height:520px;object-fit:cover;object-position:center 40%}
+  @media (max-width:900px){.hero-img{height:320px}}
+
+  /* Layouts */
+  .three{display:grid;grid-template-columns:repeat(3,1fr)}
+  .three > div{padding:56px 44px;text-align:center}
+  .three > div + div{border-left:1px solid var(--rule)}
+  .three p{color:var(--muted);font-size:16px}
+  .split{display:grid;grid-template-columns:1fr 1fr;align-items:center}
+  .split .photo{min-height:520px;height:100%}
+  .split .t{padding:70px 80px}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--rule)}
+  .grid3 > div{padding:40px 32px;border-bottom:1px solid var(--rule)}
+  .grid3 > div:not(:nth-child(3n+1)){border-left:1px solid var(--rule)}
+  .grid3 h3{font-size:1.25rem;margin-bottom:.4em}
+  .grid3 p{color:var(--muted);font-size:16px;margin:0}
+  .team{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+  .team .photo{min-height:260px;margin-bottom:18px}
+  .team h3{font-size:1.15rem;margin-bottom:.2em}
+  .team p{font-size:15px;color:var(--muted);margin:0 0 .3em}
+  @media (max-width:900px){
+    .three,.split,.cols,.grid3,.team{grid-template-columns:1fr}
+    .three > div + div{border-left:none;border-top:1px solid var(--rule)}
+    .grid3 > div:not(:nth-child(3n+1)){border-left:none}
+    .split .t{padding:50px 32px}
+    .split .photo{min-height:320px}
+    .team{grid-template-columns:1fr 1fr}
+  }
+
+  /* Lists */
+  ul.plain{list-style:none;padding:0;margin:0 0 1.2em}
+  ul.plain li{padding:12px 0 12px 26px;border-bottom:1px solid var(--rule);position:relative}
+  ul.plain li::before{content:"";position:absolute;left:4px;top:24px;width:7px;height:7px;border-radius:50%;background:var(--orange)}
+
+  /* Mission band */
+  .band{background:var(--navy);color:#fff;text-align:center;padding:80px 32px}
+  .band p{font-style:italic;font-size:clamp(1.3rem,2.6vw,1.75rem);line-height:1.5;max-width:860px;margin:0 auto;color:#fff}
+  .band .lbl{color:#BFD9E3}
+
+  /* Info strip */
+  .facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .facts div{padding:34px 26px;text-align:center}
+  .facts div + div{border-left:1px solid var(--rule)}
+  .facts .lbl{margin-bottom:6px}
+  @media (max-width:900px){.facts{grid-template-columns:1fr 1fr}.facts div:nth-child(3){border-left:none}.facts div:nth-child(n+3){border-top:1px solid var(--rule)}}
+
+  /* Table */
+  table{width:100%;border-collapse:collapse;font-family:var(--sans);font-size:17px;background:var(--white)}
+  th,td{text-align:left;padding:16px 20px;border-bottom:1px solid var(--rule)}
+  th{font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);border-bottom:1px solid var(--navy)}
+
+  /* Steps */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .steps div{padding:44px 30px;text-align:center}
+  .steps div + div{border-left:1px solid var(--rule)}
+  .steps .n{font-size:2.2rem;color:var(--orange);display:block;margin-bottom:8px}
+  .steps h3{font-size:1.2rem}
+  .steps p{font-size:16px;color:var(--muted);margin:0}
+  @media (max-width:900px){.steps{grid-template-columns:1fr}.steps div + div{border-left:none;border-top:1px solid var(--rule)}}
+
+  /* FAQ */
+  details{border-bottom:1px solid var(--rule)}
+  details:first-of-type{border-top:1px solid var(--rule)}
+  summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;color:var(--navy);font-size:1.1rem;position:relative}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-family:var(--sans);font-size:1.5rem;color:var(--orange)}
+  details[open] summary::after{content:"\2013"}
+  details p{color:var(--muted);font-size:16px}
+
+  /* Form */
+  form label{display:block;font:600 13px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:#3B4256;margin-bottom:6px}
+  form .f{margin-bottom:20px}
+  input,select,textarea{width:100%;padding:12px 14px;border:1px solid #C8C0AE;background:var(--white);font:17px var(--sans);color:var(--ink);border-radius:0}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--teal);outline-offset:1px}
+  .note{display:none;margin-top:16px;padding:14px 18px;background:var(--cream);border-left:3px solid var(--orange);font-size:15px}
+  .note.show{display:block}
+
+  /* Callout */
+  .callout{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:22px 0;margin:28px 0;font-size:16px}
+
+  /* Map */
+  .map{min-height:320px;background:var(--photo);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;color:var(--muted);font-size:15px}
+  .map strong{color:var(--navy);font-weight:400;font-size:1.1rem}
+
+  /* Motto band (every page) */
+  .motto{background:var(--white);border-top:1px solid var(--rule);text-align:center;padding:56px 32px}
+  .motto p{font-style:italic;color:var(--purple);font-size:clamp(1.2rem,2.4vw,1.5rem);margin:0}
+
+  /* Visit Us + embedded map (home) */
+  .visit{padding:60px 0}
+  .visit-grid{max-width:920px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .visit h2{font-size:1.5rem}
+  .visit p{font-size:16px}
+  .map-embed{position:relative;height:300px;background:var(--photo);border:1px solid var(--rule)}
+  .map-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .map-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;font:600 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#8A857C}
+  @media (max-width:900px){.visit-grid{grid-template-columns:1fr;gap:32px}}
+
+  /* Footer */
+  footer{border-top:1px solid var(--rule);background:var(--cream);text-align:center;padding:60px 32px 36px;font-size:15px;color:var(--muted)}
+  footer img{height:84px;margin:0 auto 18px}
+  footer .fnav{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 26px;margin:22px 0;font:600 13px var(--sans);letter-spacing:.08em;text-transform:uppercase}
+  footer .fnav a{color:#3B4256;text-decoration:none}
+  footer .small{font-size:13px;margin-top:26px}
+
+  /* Dialog */
+  #dlg{display:none;position:fixed;inset:0;background:rgba(42,47,61,.45);z-index:100;align-items:center;justify-content:center;padding:20px}
+  #dlg .box{background:var(--cream);max-width:420px;padding:40px;text-align:center;border:1px solid var(--rule)}
+  .skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:#fff;padding:8px 12px;z-index:200}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <a class="logo" href="#home" aria-label="Serenity Memory Center home"><img src="logo.png" alt="Serenity Memory Center – Senior Day Program – A place of connection, purpose, joy"></a>
+</header>
+<nav>
+  <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+  <ul class="menu" id="menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#programs">Programs</a></li>
+    <li><a href="#fees">Fees &amp; Financial Aid</a></li>
+    <li><a href="#apply">Application</a></li>
+    <li><a href="#faq">FAQ's</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    <li><a href="#volunteer">Volunteer</a></li>
+    <li><a href="#donate" class="donate">Donate</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+
+<!-- ======================= HOME ======================= -->
+<div class="page" id="page-home">
+  <div class="hero"><img class="hero-img" src="hero.jpg" alt="Older adults laughing and doing crafts together around a table"></div>
+
+  <section class="cream">
+    <div class="narrow center">
+      <h1>Welcome to Serenity</h1>
+      <p class="tag">A place of connection, purpose, joy</p>
+      <div class="orn"><b></b></div>
+      <p class="muted">Serenity Memory Center is a nonprofit day program in Ridgefield for adults with early to middle stage memory loss. Ours is a social model, not a medical one: days filled with art, music, movement and friendship, and peace of mind for families.</p>
+      <a class="btn fill" href="#about">Learn more</a>
+      <a class="btn" href="#contact">Contact us</a>
+    </div>
+  </section>
+
+  <div class="three white ruled">
+    <div><h3>Our Philosophy</h3><p>Every person still has much to give and much to enjoy. We build each day around connection and purpose.</p><a class="btn" href="#about">Read more</a></div>
+    <div><h3>Programs</h3><p>Art, music, chair yoga, tai chi, puzzles, trivia and calming meditation.</p><a class="btn" href="#programs">Read more</a></div>
+    <div><h3>Financial Aid</h3><p>Scholarships help make sure cost is never the reason a family goes without.</p><a class="btn" href="#fees">Read more</a></div>
+  </div>
+
+  <div class="facts cream">
+    <div><span class="lbl">Location</span>St. Andrew's Lutheran Church</div>
+    <div><span class="lbl">Hours</span>Schedule coming soon</div>
+    <div><span class="lbl">Who we serve</span>Early to middle stage memory loss</div>
+    <div><span class="lbl">Status</span>Nonprofit <span class="ph">501(c)(3)</span></div>
+  </div>
+
+  <section class="white ruled visit">
+    <div class="visit-grid">
+      <div>
+        <span class="lbl">Visit Us</span>
+        <h2>At St. Andrew's Lutheran Church</h2>
+        <p class="muted">6 Ivy Hill Rd<br>Ridgefield, CT 06877</p>
+        <p class="muted">Serving Ridgefield and nearby towns, including upper Westchester County: South Salem, Katonah and North Salem.</p>
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=6+Ivy+Hill+Rd+Ridgefield+CT+06877" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="map-embed">
+        <span class="map-fallback">Map of 6 Ivy Hill Rd, Ridgefield, CT</span>
+        <iframe title="Map: St. Andrew's Lutheran Church, 6 Ivy Hill Rd, Ridgefield, CT" src="https://www.google.com/maps?q=St.+Andrew%27s+Lutheran+Church,+6+Ivy+Hill+Rd,+Ridgefield,+CT+06877&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ======================= ABOUT ======================= -->
+<div class="page" id="page-about">
+  <div class="page-head cream">
+    <h1>About Us</h1>
+    <p class="tag">A community nonprofit for adults living with memory loss and the families who love them</p>
+    <div class="orn"><b></b></div>
+  </div>
+
+  <section class="white ruled">
+    <div class="narrow">
+      <div class="center"><h2>Our Story</h2><div class="orn"><b></b></div></div>
+      <p class="muted">Serenity was born from the personal experiences of a group of individuals whose families have been touched by cognitive impairment and memory loss. Through our own journeys, we came to understand the challenges faced by individuals living with memory changes, as well as the families and caregivers who support them.</p>
+      <p class="muted">As we explored opportunities for our loved ones to remain socially connected, mentally stimulated, and actively engaged in daily life, we recognized a significant gap in our community: there was no dedicated local program offering the meaningful activities, companionship, and supportive environment these individuals deserve.</p>
+      <p class="muted">Rather than accept that this resource was missing, we came together with a shared vision: to create Serenity—a welcoming place where individuals experiencing memory loss can continue to find purpose, build connections, experience joy, and feel a sense of belonging.</p>
+    </div>
+  </section>
+
+  <div class="split cream ruled">
+    <div class="t">
+      <span class="lbl">Our Philosophy</span>
+      <h2>A social model, not a medical one</h2>
+      <p class="muted">At Serenity, we believe people living with memory loss still have so much to give and so much to enjoy. Our program is built around connection, purpose and joy, not medical treatment.</p>
+      <p class="muted">Each day brings creative, physical and mental activity in a calm, familiar setting, where every participant can take part at their own pace and be seen for who they are.</p>
+      <p><span class="ph">Add more about Serenity's philosophy here.</span></p>
+    </div>
+    <div class="photo">Photo · participants laughing together</div>
+  </div>
+
+  <div class="band">
+    <span class="lbl">Our Mission</span>
+    <p>To enrich the daily lives of individuals with memory loss by providing a safe, stimulating and joyful retreat that offers daily engagement for the participants and peace of mind for their families.</p>
+    <div class="orn" style="margin:40px auto"><b></b></div>
+    <span class="lbl">Our Vision</span>
+    <p>We envision a community where individuals living with memory loss have opportunities to remain engaged, connected, and valued, while their families find reassurance, support, and time to recharge.</p>
+  </div>
+
+  <section class="cream">
+    <div class="narrow">
+      <div>
+        <span class="lbl">Who We Serve</span>
+        <h2>Adults with early to middle stage memory loss</h2>
+        <p class="muted">Serenity is for adults living with memory loss, whether diagnosed dementia or another type of cognitive impairment, who would benefit from activity and time with others.</p>
+        <ul class="plain">
+          <li>Early to middle stage memory loss</li>
+          <li>Participants attend with a personal aide or companion</li>
+          <li>Open to Ridgefield residents and non-residents</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="white ruled">
+    <div class="wrap">
+      <div class="center"><span class="lbl">Our Team</span><h2>The people behind Serenity</h2><div class="orn"><b></b></div></div>
+      <div class="team">
+        <div><div class="photo">Headshot</div><h3><span class="ph">Name</span></h3><p><span class="ph">Title / role</span></p><p><span class="ph">Short bio</span></p></div>
+        <div><div class="photo">Headshot</div><h3><span class="ph">Name</span></h3><p><span class="ph">Title / role</span></p><p><span class="ph">Short bio</span></p></div>
+        <div><div class="photo">Headshot</div><h3><span class="ph">Name</span></h3><p><span class="ph">Title / role</span></p><p><span class="ph">Short bio</span></p></div>
+        <div><div class="photo">Headshot</div><h3><span class="ph">Name</span></h3><p><span class="ph">Title / role</span></p><p><span class="ph">Short bio</span></p></div>
+      </div>
+      <div class="callout center muted">Serenity Memory Center is a <span class="ph">501(c)(3) nonprofit organization, EIN XX-XXXXXXX</span>.</div>
+    </div>
+  </section>
+</div>
+
+<!-- ======================= PROGRAMS ======================= -->
+<div class="page" id="page-programs">
+  <div class="page-head cream">
+    <h1>Programs &amp; Activities</h1>
+    <p class="tag">Activities are set up as small centers that rotate through the day</p>
+    <div class="orn"><b></b></div>
+  </div>
+
+  <div class="hero"><div class="photo">Photo · chair yoga class</div></div>
+
+  <section class="white">
+    <div class="wrap">
+      <div class="grid3">
+        <div><h3>Art</h3><p>Painting, drawing and hands-on creative projects.</p></div>
+        <div><h3>Music</h3><p>Sing-alongs, listening, and visiting musicians and artists.</p></div>
+        <div><h3>Gentle Movement</h3><p>Chair yoga, tai chi and simple physical exercise.</p></div>
+        <div><h3>Brain Games</h3><p>Puzzles, mind games and brain stimulation, alone or in small groups.</p></div>
+        <div><h3>Bingo &amp; Trivia</h3><p>Bingo and trivia shown on the overhead projector.</p></div>
+        <div><h3>Relaxation</h3><p>Calm, comforting meditation to relax and recharge.</p></div>
+        <div><h3>Lunch Together</h3><p>Sharing a meal and conversation. <span class="ph">Meal details</span></p></div>
+        <div><h3>Gardening</h3><p><span class="ph">Confirm if gardening is offered</span></p></div>
+        <div><h3><span class="ph">Activity</span></h3><p><span class="ph">Description</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="split cream ruled">
+    <div class="photo">Photo · main room with paintings of town buildings</div>
+    <div class="t">
+      <span class="lbl">Our Spaces</span>
+      <h2><span class="ph">Room name</span></h2>
+      <p class="muted">Our main room is painted with familiar buildings from around Ridgefield, a comforting reminder of home.</p>
+      <h3 style="margin-top:1.4em">The Playhouse</h3>
+      <p class="muted">Our music room, for sing-alongs, performances and visiting musicians.</p>
+    </div>
+  </div>
+
+  <section class="white">
+    <div class="wrap cols">
+      <div>
+        <span class="lbl">Schedule</span>
+        <h2>Program hours</h2>
+        <p class="muted"><strong>Schedule coming soon.</strong> We'll share our days and hours as we get closer to opening.</p>
+        <p class="muted">Families handle drop-off and pick-up.</p>
+        <a class="btn" href="#contact">Get updates</a>
+      </div>
+      <table>
+        <tr><th>Sample day</th><th>Activity</th></tr>
+        <tr><td><span class="ph">Time</span></td><td>Arrival &amp; welcome</td></tr>
+        <tr><td><span class="ph">Time</span></td><td>Gentle movement</td></tr>
+        <tr><td><span class="ph">Time</span></td><td>Art or music centers</td></tr>
+        <tr><td><span class="ph">Time</span></td><td>Lunch together</td></tr>
+        <tr><td><span class="ph">Time</span></td><td>Games, trivia &amp; puzzles</td></tr>
+        <tr><td><span class="ph">Time</span></td><td>Relaxation &amp; pick-up</td></tr>
+      </table>
+    </div>
+  </section>
+</div>
+
+<!-- ======================= FEES ======================= -->
+<div class="page" id="page-fees">
+  <div class="page-head cream">
+    <h1>Fees &amp; Financial Aid</h1>
+    <p class="tag">We want every family who needs Serenity to be able to join us</p>
+    <div class="orn"><b></b></div>
+  </div>
+
+  <section class="white ruled">
+    <div class="narrow">
+      <span class="lbl">Program Fees</span>
+      <table>
+        <tr><th>Option</th><th>Fee</th><th>Notes</th></tr>
+        <tr><td>Full day</td><td><span class="ph">$XX</span></td><td><span class="ph">Details</span></td></tr>
+        <tr><td>Half day</td><td><span class="ph">$XX</span></td><td><span class="ph">Details</span></td></tr>
+        <tr><td>Registration fee</td><td><span class="ph">$XX</span></td><td><span class="ph">One-time</span></td></tr>
+        <tr><td><span class="ph">Other</span></td><td><span class="ph">$XX</span></td><td><span class="ph">Details</span></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <div class="three cream">
+    <div style="grid-column:span 1">
+      <span class="lbl">Scholarships</span>
+      <h3>Help with the cost</h3>
+      <p>Scholarships are available to help families cover program fees. <span class="ph">Eligibility details</span></p>
+      <a class="btn fill" href="#" data-ph="Scholarship application">Apply for a scholarship</a>
+    </div>
+    <div>
+      <span class="lbl">Medicare &amp; Medicaid</span>
+      <h3>Coverage options</h3>
+      <p>Serenity is a social day program, not a medical one. Coverage varies, so reach out and we'll help you explore what may be available. <span class="ph">Details coming soon</span></p>
+      <a class="btn" href="#contact">Ask us</a>
+    </div>
+    <div>
+      <span class="lbl">Questions</span>
+      <h3>We're here to help</h3>
+      <p>Not sure what's right for your family? Let's talk it through together.</p>
+      <a class="btn" href="#contact">Contact us</a>
+    </div>
+  </div>
+</div>
+
+<!-- ======================= APPLICATION ======================= -->
+<div class="page" id="page-apply">
+  <div class="page-head cream">
+    <h1>Application</h1>
+    <p class="tag">Getting started is simple. We'll guide your family through each step.</p>
+    <div class="orn"><b></b></div>
+  </div>
+
+  <div class="steps white">
+    <div><span class="n">1</span><h3>Reach out</h3><p>Call or send us a message and tell us about your loved one.</p></div>
+    <div><span class="n">2</span><h3>Visit</h3><p>See our space and meet our team. <span class="ph">Confirm tour process</span></p></div>
+    <div><span class="n">3</span><h3>Apply</h3><p>Complete the participant application.</p></div>
+    <div><span class="n">4</span><h3>Join us</h3><p>Choose a start date and get ready for a great first day.</p></div>
+  </div>
+
+  <section class="cream">
+    <div class="wrap cols">
+      <div>
+        <span class="lbl">Before You Apply</span>
+        <h2>Who is a good fit</h2>
+        <ul class="plain">
+          <li>Adults with early to middle stage memory loss</li>
+          <li>Participants attend with a personal aide or companion</li>
+          <li>Families provide drop-off and pick-up</li>
+          <li>Open to Ridgefield residents and non-residents</li>
+          <li><span class="ph">Add other requirements</span></li>
+        </ul>
+      </div>
+      <div class="center" style="align-self:center">
+        <h2>Ready to apply?</h2>
+        <div class="orn"><b></b></div>
+        <p class="muted">Download the application or complete it online.</p>
+        <a class="btn fill" href="#" data-ph="Participant application">Participant application</a><br>
+        <a class="btn" href="#" data-ph="Scholarship application">Scholarship application</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ======================= FAQ ======================= -->
+<div class="page" id="page-faq">
+  <div class="page-head cream">
+    <h1>FAQ's</h1>
+    <p class="tag">Don't see your question? We're always happy to help.</p>
+    <div class="orn"><b></b></div>
+  </div>
+  <section class="white ruled">
+    <div class="narrow">
+      <details><summary>Who is Serenity for?</summary><p>Serenity is for adults with early to middle stage memory loss, whether diagnosed dementia or another type of cognitive impairment, who would enjoy activity and time with others.</p></details>
+      <details><summary>Is Serenity a medical program?</summary><p>No. Serenity follows a social model, not a medical one. We focus on connection, engagement and joy, and do not provide medical care.</p></details>
+      <details><summary>Does my loved one need to come with an aide?</summary><p>Yes. Each participant attends with a personal aide or companion. <span class="ph">Add details on aides</span></p></details>
+      <details><summary>Where are you located?</summary><p>St. Andrew's Lutheran Church, 6 Ivy Hill Rd, Ridgefield, CT 06877. <a href="https://www.google.com/maps/search/?api=1&query=6+Ivy+Hill+Rd+Ridgefield+CT+06877" target="_blank" rel="noopener">Open in Google Maps</a>.</p></details>
+      <details><summary>What are your hours?</summary><p>Our schedule is coming soon. <a href="#contact">Contact us</a> to hear when we announce our days and hours.</p></details>
+      <details><summary>Do I have to live in Ridgefield?</summary><p>No. Serenity is open to Ridgefield residents and non-residents, including families from nearby towns and upper Westchester County.</p></details>
+      <details><summary>Is transportation provided?</summary><p>Families take care of drop-off and pick-up. <span class="ph">Confirm</span></p></details>
+      <details><summary>What does it cost? Is financial help available?</summary><p>Program fees will be posted soon, and scholarships are available. See <a href="#fees">Fees &amp; Financial Aid</a>.</p></details>
+      <details><summary>Is lunch provided?</summary><p>Lunch is part of the day. <span class="ph">Add whether meals are provided or brought from home</span></p></details>
+      <details><summary>What should my loved one bring?</summary><p><span class="ph">Add list</span></p></details>
+      <details><summary>How do I apply?</summary><p>Visit our <a href="#apply">Application</a> page for the steps and forms.</p></details>
+      <p class="center" style="margin-top:40px"><a class="btn" href="#contact">Ask a question</a></p>
+    </div>
+  </section>
+</div>
+
+<!-- ======================= CONTACT ======================= -->
+<div class="page" id="page-contact">
+  <div class="page-head cream">
+    <h1>Contact Us</h1>
+    <p class="tag">Questions, visits or opening updates, we'd love to hear from you</p>
+    <div class="orn"><b></b></div>
+  </div>
+  <section class="white ruled">
+    <div class="wrap cols">
+      <div>
+        <span class="lbl">Address</span>
+        <p>St. Andrew's Lutheran Church<br>6 Ivy Hill Rd, Ridgefield, CT 06877</p>
+        <span class="lbl">Phone</span>
+        <p><span class="ph">(XXX) XXX-XXXX</span></p>
+        <span class="lbl">Email</span>
+        <p><span class="ph">info@serenitymemory.org</span></p>
+        <span class="lbl">Hours</span>
+        <p>Schedule coming soon</p>
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=6+Ivy+Hill+Rd+Ridgefield+CT+06877" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <form id="cf" novalidate>
+        <div class="f"><label for="n">Name</label><input id="n"></div>
+        <div class="f"><label for="e">Email</label><input id="e" type="email"></div>
+        <div class="f"><label for="p">Phone (optional)</label><input id="p" type="tel"></div>
+        <div class="f"><label for="t">I'm interested in</label><select id="t"><option>General question</option><option>Enrolling a loved one</option><option>Scholarships</option><option>Volunteering (students)</option><option>Volunteering (adults)</option><option>Donating</option></select></div>
+        <div class="f"><label for="m">Message</label><textarea id="m" rows="4"></textarea></div>
+        <button class="btn fill" type="submit" style="margin:0">Send</button>
+        <div class="note" id="cfn">This form isn't connected yet. It will be set up when the site goes live.</div>
+      </form>
+    </div>
+  </section>
+</div>
+
+<!-- ======================= VOLUNTEER ======================= -->
+<div class="page" id="page-volunteer">
+  <div class="page-head cream">
+    <h1>Volunteer</h1>
+    <p class="tag">Share your time, and a few smiles, with our participants</p>
+    <div class="orn"><b></b></div>
+  </div>
+
+  <div class="split white ruled">
+    <div class="t">
+      <span class="lbl">Student Volunteers</span>
+      <h2>Connecting generations</h2>
+      <p class="muted">Some of the best moments at Serenity happen when generations come together. We welcome high school and younger students to spend time with our participants: talking, playing games, making art and simply keeping them company.</p>
+      <p class="muted">We're working to partner with local chapters of the <strong>National Charity League (NCL)</strong> and the <strong>National Honor Society (NHS)</strong> to bring student volunteers to Serenity.</p>
+      <a class="btn fill" href="#" data-ph="Volunteer sign-up">Volunteer sign-up</a>
+    </div>
+    <div class="photo">Photo · student and participant playing a game together</div>
+  </div>
+
+  <div class="three cream">
+    <div><h3>Conversation</h3><p>Sit, chat and listen. Participants love sharing their stories, and hearing yours.</p></div>
+    <div><h3>Games &amp; Puzzles</h3><p>Join in on bingo, trivia, cards and puzzles.</p></div>
+    <div><h3>Art &amp; Music</h3><p>Help with art projects, sing along and bring your own talents to share.</p></div>
+  </div>
+
+  <section class="white ruled">
+    <div class="wrap cols">
+      <div>
+        <span class="lbl">What to Know</span>
+        <h2>Before you volunteer</h2>
+        <ul class="plain">
+          <li>Minimum age: <span class="ph">XX</span></li>
+          <li>Parent or guardian permission for volunteers under 18 <span class="ph">Confirm</span></li>
+          <li>Volunteer orientation: <span class="ph">Details</span></li>
+          <li>Volunteer days and times: <span class="ph">Schedule coming soon</span></li>
+          <li>Service hours: <span class="ph">How hours are verified for NCL, NHS and school requirements</span></li>
+        </ul>
+      </div>
+      <div>
+        <span class="lbl">Adult Volunteers</span>
+        <h2>Share your talents</h2>
+        <p class="muted">Are you a musician, artist, or someone with a skill or hobby to share? We'd love to have visiting performers and adult volunteers help bring each day to life.</p>
+        <p><span class="ph">Add adult volunteer roles</span></p>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ======================= DONATE ======================= -->
+<div class="page" id="page-donate">
+  <div class="page-head cream">
+    <h1>Support Serenity</h1>
+    <p class="tag">Your gift brings connection, purpose and joy to local families</p>
+    <div class="orn"><b></b></div>
+  </div>
+  <div class="split white ruled">
+    <div class="t">
+      <span class="lbl">Where Your Gift Goes</span>
+      <ul class="plain">
+        <li>Scholarships so more families can attend</li>
+        <li>Art and craft supplies</li>
+        <li>Visiting musicians and artists</li>
+        <li>Games, puzzles and activity materials</li>
+        <li><span class="ph">Add more</span></li>
+      </ul>
+      <p class="muted" style="font-size:15px">Serenity Memory Center is a <span class="ph">501(c)(3) nonprofit, EIN XX-XXXXXXX</span>. Donations are tax-deductible to the extent allowed by law.</p>
+    </div>
+    <div class="center" style="padding:70px 40px;background:var(--cream);height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center">
+      <img src="mark.png" alt="" style="width:130px;height:auto;margin-bottom:22px">
+      <h2>Make a gift today</h2>
+      <p class="muted">Every gift, large or small, makes a difference.</p>
+      <a class="btn warm" href="#" data-ph="Donation page">Donate now</a>
+      <p class="muted" style="font-size:14px;margin-top:20px">Prefer to give by check? <span class="ph">Mailing instructions</span></p>
+    </div>
+  </div>
+  <div class="three cream">
+    <div><h3>Volunteer</h3><p>Share your time, talents or music with our participants.</p><a class="btn" href="#volunteer">Learn more</a></div>
+    <div><h3>Donate supplies</h3><p><span class="ph">Wish list</span></p></div>
+    <div><h3>Spread the word</h3><p>Tell a friend or neighbor who could use Serenity's support.</p></div>
+  </div>
+</div>
+</main>
+
+<div class="motto">
+  <p>Every day should bring purpose, connection, and joy.</p>
+  <div class="orn" style="margin:20px auto 0"><b></b></div>
+</div>
+
+<footer>
+  <img src="logo.png" alt="Serenity Memory Center">
+  St. Andrew's Lutheran Church · 6 Ivy Hill Rd, Ridgefield, CT 06877 · <span class="ph">(XXX) XXX-XXXX</span><br>
+  <a href="https://www.google.com/maps/search/?api=1&query=6+Ivy+Hill+Rd+Ridgefield+CT+06877" target="_blank" rel="noopener">View on Google Maps</a>
+  <div class="fnav"><a href="#about">About Us</a><a href="#programs">Programs</a><a href="#fees">Fees &amp; Financial Aid</a><a href="#apply">Application</a><a href="#faq">FAQ's</a><a href="#contact">Contact Us</a><a href="#volunteer">Volunteer</a><a href="#donate">Donate</a></div>
+  <div class="small">A <span class="ph">501(c)(3)</span> nonprofit organization · © 2026 Serenity Memory Center</div>
+</footer>
+
+<div id="dlg" role="dialog" aria-modal="true"><div class="box"><h3 id="dlgt">Coming soon</h3><p class="muted">This link will be added when the site goes live.</p><button class="btn fill" id="dlgc">OK</button></div></div>
+
+<script>
+(function(){
+  var pages=['home','about','programs','fees','apply','faq','contact','volunteer','donate'];
+  var menu=document.getElementById('menu'), mb=document.querySelector('.menu-btn');
+  function show(){
+    var h=(location.hash||'#home').slice(1); if(pages.indexOf(h)<0) h='home';
+    pages.forEach(function(p){document.getElementById('page-'+p).classList.toggle('active',p===h);});
+    document.querySelectorAll('.menu a').forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+h);});
+    menu.classList.remove('open'); mb.setAttribute('aria-expanded','false'); window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange',show); show();
+  mb.onclick=function(){var o=menu.classList.toggle('open'); mb.setAttribute('aria-expanded',o);};
+  var d=document.getElementById('dlg');
+  document.querySelectorAll('[data-ph]').forEach(function(a){a.onclick=function(e){e.preventDefault();document.getElementById('dlgt').textContent=a.dataset.ph+': coming soon';d.style.display='flex';};});
+  document.getElementById('dlgc').onclick=function(){d.style.display='none';};
+  d.onclick=function(e){if(e.target===d)d.style.display='none';};
+  document.getElementById('cf').onsubmit=function(e){e.preventDefault();document.getElementById('cfn').classList.add('show');};
+})();
+</script>
+</body>
+</html>
